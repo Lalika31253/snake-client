@@ -16,31 +16,11 @@ const connect = function () {
     conn.write("Name: PAM"); // apply name to the snake
   });
 
-  //create moves array to store different moves
-  const moves = [
-    "Move: up",
-    "Move: down",
-    "Move: left",
-    "Move: right"
-  ];
-
-  conn.on("connect", () => {
-    let index = 0;
-    const delayMoves = setInterval(() => {
-      if (index < moves.length) {
-        conn.write(moves[index]);
-        index++;
-      } else {
-        clearInterval(delayMoves);
-      }
-    }, 500);
-  });
-
   return conn;
 };
 
 console.log("Connecting ...");
 
-module.exports = connect;
+module.exports = { connect };
 
 

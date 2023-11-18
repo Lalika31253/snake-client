@@ -1,12 +1,8 @@
-const connect = require('./client');
-const {setupInput} = require('./input');
+const net = require("net");
+const { connect } = require('./client');
+const { setupInput } = require('./input');
 
-const conn = connect();
+const connection = connect();
 
-//handle incoming data from server
-conn.on("data", () => {
-  console.log("You ded cuz yoy idled!");
-});
-
-setupInput();
+setupInput(connection);
 
