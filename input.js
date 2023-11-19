@@ -24,6 +24,8 @@ const handleUserInput = function () {
       connection.write("Move: down");
     } else if (key === "d") {
       connection.write("Move: right");
+    } else if (key === "q") {
+      connection.write("Keep going");
     } else if (key === '\u0003') { // \u0003 maps to ctrl+c input
       process.exit();
     };
