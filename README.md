@@ -27,4 +27,4 @@ Use second separate terminal windows which will be responsible for client side. 
 
 
 ## Final Product
-!["Snake.jpg"](#)
+![Gameplay picture](https://github.com/Lalika31253/snake-client/blob/main/picture/Snake.jpg)

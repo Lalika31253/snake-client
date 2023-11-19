@@ -14,7 +14,7 @@ const setupInput = (conn) => {
 };
 
 const handleUserInput = function (key) {
-
+//check if the pressed key has a corresponding move in the MOVES object 
   if (MOVES[key]) {
     connection.write(MOVES[key]);
   };
